@@ -1,0 +1,397 @@
+@import "reset.css";
+@import "hamburger.css";
+
+.container {
+    margin: 0 auto;
+    width: min(90%, 970px);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #070707;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #F6F6F6;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.subsection_title {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*=== Header start ===*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    height: 80px;
+}
+
+header .container {
+    height: 100%;
+    border-bottom: 1px solid #828282;
+}
+
+.hamb-wrapper {
+    display: none;
+}
+
+.header_navigation {
+    height: 100%;
+}
+.navigation_list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.navigation_list a {
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #828282;
+}
+
+.navigation_list a:hover {
+    color: #070707;
+}
+
+/*=== Header end ===*/
+
+/*=== Main section start ===*/
+#main_section {
+    margin-top: 80px;
+    padding-top: 48px;
+}
+
+h1 {
+    color: #070707;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.positions_block {
+    margin-bottom: 30px;
+    font-size: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.positions_block .divider {
+    width: 2px;
+    height: 30px;
+    background-color: #070707;
+}
+
+.general_info {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+}
+
+#main_section .photo_wrapper {
+    width: 300px;
+    height: 400px;
+}
+
+#main_section .photo_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 57% 50%;
+    border-radius: 50px;
+}
+
+.my_info {
+    align-self: center
+}
+
+.info_item {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.info_item strong {
+    margin-right: 10px;
+}
+
+.info_item:last-child {
+    margin-bottom: 0;
+}
+
+/*=== Main section end ===*/
+
+/*=== About me section start ===*/
+
+.about_me_description {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    /*margin: 0 auto;*/
+    /*width: min(90%, 480px);*/
+}
+
+#about_me p {
+    text-align: center;
+}
+
+
+/*=== About me section end ===*/
+
+/*=== Skills section start ===*/
+
+.other_skills h3 {
+    margin-bottom: 50px;
+}
+
+.technical_skills h3 {
+    margin-bottom: 20px;
+
+}
+
+.technical_skills p {
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.technical_skills_container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.technical_skill_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+    color: #828282;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+}
+
+.skill_icon_wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.skill_icon_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skill_name {
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.skill_level_description {
+    margin-bottom: 25px;
+}
+
+.skill_level_visualization {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filled_star, .empty_star {
+    width: 26px;
+    height: 26px;
+}
+
+.filled_star {
+    background-image: url("../img/skills/filled-star.svg");
+}
+
+.empty_star {
+    background-image: url("../img/skills/empty-star.svg");
+}
+
+.other_skills {
+    margin-bottom: 50px;
+}
+.other_skills_list, .languages_list {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.other_technical_skills_item strong {
+    margin-right: 10px;
+}
+
+/*=== Skills section end ===*/
+
+/*=== Portfolio section start ===*/
+
+#portfolio {
+    padding: 100px 0;
+}
+
+#portfolio h2 {
+    margin-bottom: 50px;
+}
+
+.portfolio_item {
+    margin-bottom: 70px;
+}
+
+.portfolio_item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio_img_wrapper {
+    width: 100%;
+    aspect-ratio: 17/9;
+    margin-bottom: 40px;
+}
+
+.portfolio_img_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio_item_title, .portfolio_item_design_link{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #828282;
+}
+
+.portfolio_item_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio_item_title:hover,
+.portfolio_item_design_link:hover {
+    color: #070707;
+}
+
+.portfolio_item_description {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portfolio_item_description:last-child {
+    margin-bottom: 0;
+}
+
+
+/*=== Portfolio section end ===*/
+
+/*=== Contacts section start ===*/
+
+#contacts h2 {
+    margin-bottom: 20px;
+}
+
+#contacts p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.social_medias {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.social_media_link {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.social_media_link svg {
+    aspect-ratio: 1/1;
+    height: 40px;
+    fill: #828282;
+
+}
+
+.social_media_link:hover svg {
+    fill: #070707;
+
+}
+
+.email_contact {
+    text-align: center;
+    font-size: 14px;
+    color: #828282;
+}
+
+/*=== Contacts section end ===*/
+
+
+@media screen and (max-width: 740px) {
+    .general_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header_navigation {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        height: fit-content;
+        width: 100%;
+    }
+    .header_navigation.is-active {
+        display: block;
+    }
+    .navigation_list {
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        gap: 0;
+    }
+    .navigation_list_item {
+        border-bottom: 1px solid #828282;
+        width: 90%;
+        text-align: center;
+    }
+    .navigation_list_item a {
+        padding: 15px 0;
+        width: 100%;
+        display: block;
+    }
+    .hamb-wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
